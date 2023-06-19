@@ -19,7 +19,7 @@ nvm install 11.5
 nvm use 20.3.0
 nvm use 11.5.0
 
-#4) 
+#4) installing mongodb
 
 
 #5) creating projects directory
@@ -61,7 +61,14 @@ vi test1.txt
 #11) Get all processes that have been running for more than 2 hours
 ps -eo pid,etime,args --sort=start_time --no-headers | awk '{split($2, time, ":"); if (time[1] >= 2) print $0}'
 
-#12) 
+#12) finding all images greater than 2MB in a folder and move them to another folder.
+mkdir new
+
+var1=$(pwd)
+
+var=$(find "$var1" -name '*.jpeg' -size +2M)
+
+mv "$var" "$var1/new"
 
 
 #13) Take a rough content of 1000 lines in a file(any format) and split this using split command in with equal number of lines in each file.

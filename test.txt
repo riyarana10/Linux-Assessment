@@ -1,1 +1,4 @@
 hello world
+
+to replace hello world with hello riya
+type command ":%s/hello world/hello riya/g"

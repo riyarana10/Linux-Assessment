@@ -60,7 +60,8 @@ grep "Hello" *.txt
 
 
 #10) vi editor
-vi test1.txt
+vi test.txt
+# i have added command for replacement in test.txt file 
 
 #11) Get all processes that have been running for more than 2 hours
 ps -eo pid,etime,args --sort=start_time --no-headers | awk '{split($2, time, ":"); if (time[1] >= 2) print $0}'

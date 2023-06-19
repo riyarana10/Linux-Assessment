@@ -20,6 +20,7 @@ nvm use 20.3.0
 nvm use 11.5.0
 
 #4) installing mongodb
+sudo apt-get install mongodb
 
 
 #5) creating projects directory
@@ -40,7 +41,10 @@ while true; do
     sleep 300 
 done
 
-#8) 
+#8) Schedule the sh file in crontab
+touch testing_file.sh
+echo (5 * * * * * date >> /home/shtlp_0061/Linux-Assessment/testing_file.txt) >> crontab -e
+
 
 
 #9) creating multiple files and searching for the word "Hello" in evey text file
